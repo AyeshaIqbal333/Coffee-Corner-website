@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffee Corner</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button id="theme-btn">Toggle Light/Dark Mode</button>
+<header>
+<h1>Coffee Corner</h1>
+<p id="shop-status"></p>
+<p>Fresh coffee and tasty treats</p>
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+<main>
+    <section id="home">
+<h2>Welcome to Coffee Corner</h2>
+ <p>
+   Welcome to our café. We serve fresh coffee,
+     delicious cakes and refreshing drinks.
+ </p>
+  <img src="cafe.png" alt="Coffee shop" width="400">
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+  <article>
+   <h3>Cappuccino</h3>
+   <p>Hot coffee with milk and a little foam.</p>
+   <p>Price: Rs. 350</p>
+  </article>
+   <article>
+      <h3>Chocolate Cake</h3>
+      <p>Soft chocolate cake with a rich taste.</p>
+      <p>Price: Rs. 400</p>
+        </article>
+        <article>
+            <h3>Cold Coffee</h3>
+            <p>A cold and refreshing coffee drink.</p>
+            <p>Price: Rs. 300</p>
+        </article>
+    </section>
+    <section>
+        <h2>Popular Choices</h2>
+    <ol type="A">
+       <li><input type="checkbox" class="order-item" value="350"> Cappuccino - Rs. 350</li>
+       <li><input type="checkbox" class="order-item" value="300"> Cold Coffee - Rs. 300</li>
+       <li><input type="checkbox" class="order-item" value="400"> Chocolate Cake - Rs. 400</li>
+        </ol>
+<p id="total">Total: Rs. 0</p>
+    </section>
+    <section id="about">
+        <h2>About Coffee Corner</h2>
+ <p>
+    Coffee Corner is a small café where people can enjoy
+          fresh coffee, cakes and cold drinks.
+   </p>
+   <p id="more-text" style="display: none;">We also provide a comfortable place to sit and enjoy time with friends and family.</p>
+   <button type="button" id="read-more-btn">Read More</button>
+
+    <a href="https://www.instagram.com/">Visit our Instagram</a>
+    </section>
+    <section>
+        <h2>Menu Prices</h2>
+<button type="button" class="filter-btn" data-filter="all">All</button>
+<button type="button" class="filter-btn" data-filter="drinks">Drinks</button>
+<button type="button" class="filter-btn" data-filter="pastries">Pastries</button><br><br>
+        <table border="1">
+            <tr>
+   <th>Item</th>
+   <th>Category</th>
+    <th>Price</th>
+  </tr>
+   <tr class="menu-row" data-category="drinks">
+    <td>Cappuccino</td>
+    <td>Hot Coffee</td>
+   <td>Rs. 350</td>
+   </tr>
+    <tr class="menu-row" data-category="drinks">
+    <td>Cold Coffee</td>
+    <td>Cold Drink</td>
+   <td>Rs. 300</td>
+  </tr>
+   <tr class="menu-row" data-category="pastries">
+    <td>Chocolate Cake</td>
+       <td>Dessert</td>
+       <td>Rs. 400</td>
+   </tr>
+        </table>
+ </section>
+ <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="feedback-form">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+<p>Choose your favorite drink:</p>
+<input type="radio" id="coffee" name="drink" value="coffee">
+<label for="coffee">Coffee</label>
+<input type="radio" id="coldcoffee" name="drink" value="coldcoffee">
+<label for="coldcoffee">Cold Coffee</label>
+<br><br>
+<input type="checkbox" id="updates" name="updates">
+<label for="updates">Send me café updates</label>
+<br><br>
+<label for="birth-year">Birth Year:</label>
+<input type="text" id="birth-year">
+<br><br>
+<label for="special-notes">Special Request:</label><br>
+<textarea id="special-notes" maxlength="100"></textarea>
+<p id="char-count">100 characters remaining</p>
+<p id="form-message"></p>
+<p id="discount-message"></p>
+<input type="submit" value="Submit">
+ </form>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
