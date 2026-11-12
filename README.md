@@ -16,8 +16,7 @@ Coffee Corner is a simple and attractive coffee shop website created to showcase
 - JavaScript – Interactive functionality.
 
 🚀 How to Run the Project
-
-You can view the live project here: [Add GitHub Pages Link Here]
+You can view the live project here: "Coffee Corner Website" (https://ayeshaiqbal333.github.io/Coffee-Corner-website/)
 
 Alternatively, to run it locally:
 
